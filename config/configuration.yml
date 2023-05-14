@@ -1,0 +1,4 @@
+defaults:
+  google_client_id: '903596600097-nm6eo6iumk040q14i4o9n5h5cvlhqk6a.apps.googleusercontent.com'
+  google_client_secret: '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'
+  app_host: 'http://localhost:3000/users/auth/google_oauth2'
