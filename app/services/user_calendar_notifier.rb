@@ -13,7 +13,6 @@ class UserCalendarNotifier
     google_calendar_client.insert_event(CALENDAR_ID, event_data)
   end
 
-
   private
 
   attr_reader :user, :book
@@ -44,8 +43,8 @@ class UserCalendarNotifier
 
   def event_data
     {
-      summary: 'Return the book': #{book.title}',
-      description: 'Due time: #{book.title}',
+      summary: "Return the book: #{book.title}",
+      description: "Due time: #{book_loan.due_date}",
       start: {
         date_time: two_week_from_now.to_datetime.to_s
       },

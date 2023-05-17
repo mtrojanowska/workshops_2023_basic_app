@@ -20,7 +20,6 @@ class BookLoansController < ApplicationController
       if @book_loan.cancelled!
         format.html { redirect_to book_requests_path, notice: flash_notice }
         format.json { render :show, status: :ok, location: book }
-        find_event
       end
     end
   end
