@@ -1,18 +1,1 @@
-Identyfikator klienta 
-902299609115-qe791nt898if6sr8jpfkofgrt4d95pmb.apps.googleusercontent.com 
 
-tajny klucz klienta
-     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 
-
-API key 
-AIzaSyACnWU8DB5VnDkjh6iu4EKV9BKTib-bfcA
-
-configuration.yml
-defaults:
-  weather_api_key: '03c1c761f27b42c7b66171456231005'
-  
-  services/connector.rb
-  class WeatherApiConnector
-  API_KEY = A9n.weather_api_key
-  LOCATION = 'Cracow'
-  def initialize; end
