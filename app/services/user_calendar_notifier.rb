@@ -44,7 +44,7 @@ class UserCalendarNotifier
   def event_data
     {
       summary: "Return the book: #{book.title}",
-      description: "Due time: #{book_loan.due_date}",
+      description: "Please return: #{book.title}",
       start: {
         date_time: two_week_from_now.to_datetime.to_s
       },
