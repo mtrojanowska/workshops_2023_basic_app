@@ -8,6 +8,7 @@ class BookLoansController < ApplicationController
         format.html { redirect_to book_url(book), notice: flash_notice }
         format.json { render :show, status: :created, location: @book_loan }
         notice_calendar
+        LoanEmailJob.perform_async(@book_loan.id)
       else
         format.html { redirect_to book_url(book), alert: @book_loan.errors.full_messages.join(', ') }
         format.json { render json: @book_loan.errors, status: :unprocessable_entity }
