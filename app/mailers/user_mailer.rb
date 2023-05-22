@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  def loan_email(book_loan)
+  def notification_email(book_loan)
     @title = book_loan.book.title
     @date = book_loan.due_date
 

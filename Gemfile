@@ -53,6 +53,8 @@ gem 'devise'
 
 gem 'sidekiq', '~> 7.1'
 
+gem "sidekiq-cron"
+
 gem 'a9n'
 
 gem 'omniauth-google-oauth2'
