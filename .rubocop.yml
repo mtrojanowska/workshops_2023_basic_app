@@ -22,5 +22,12 @@ Style/FrozenStringLiteralComment:
 RSpec/NestedGroups:
   MaxNesting: 4
 
+RSpec/ExampleLength:
+Exclude:
+  - 'spec/features/**/*'
+
+RSpec/AnyInstance:
+  Enabled: false
+
 Metrics/AbcSize:
   CountRepeatedAttributes: false
